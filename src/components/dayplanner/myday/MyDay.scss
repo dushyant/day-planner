@@ -1,0 +1,74 @@
+.my-day {
+
+  .week-controls {
+  
+    border-bottom: 1px solid #c1cedb;
+  
+    button {
+      border-radius: 0;
+      &:first-child {
+        border-right: 1px solid #c1cedb;
+        margin-left: -1px;;
+      }
+      &:last-child {
+        border-left: 1px solid #c1cedb;
+        margin-right: -2px;
+      }
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+  }
+
+  .day-controls {
+    button {
+      border-radius: 50%;
+      font-size: .8rem;
+      margin: 10px 20px;
+      &.active {
+        background: #ff4d4d;
+      }
+    }
+  }
+
+  .myday-section {
+
+    &__bar {
+      padding: 10px 0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      text-align: center;
+      text-transform: uppercase;
+      background: #ff7676;
+      color: #fff;
+    }
+    &__item {
+      padding: 10px 20px;
+      display: block;
+      font-weight: 400;
+      color: #545e6f;
+      font-size: 16px;
+      font-style: italic;
+      border-bottom: 1px solid #c1cedb;
+      &:last-child {
+        border-bottom: none;
+      }
+      fa-icon {
+        font-size: 1rem;
+      }
+      span {
+        margin-left: 10px;
+      }
+      button {
+        margin-left: 10px;
+        border-radius: 20px;
+      }
+      button.add-btn {
+        padding-right: 16px;
+      }
+    }
+  }
+
+}
