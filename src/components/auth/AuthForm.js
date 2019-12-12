@@ -1,5 +1,16 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import './auth.scss';
+
+const propTypes = {
+  btnLabel: PropTypes.string.isRequired,
+  onFormSubmit: PropTypes.func.isRequired
+};
+
+const defaultProps = {
+  btnLabel: 'Submit',
+  onFormSubmit: () => {}
+};
 
 export default class AuthForm extends Component {
 
@@ -61,3 +72,5 @@ export default class AuthForm extends Component {
   }
 }
 
+AuthForm.propTypes = propTypes;
+AuthForm.defaultProps = defaultProps;
